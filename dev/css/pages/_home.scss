@@ -1,6 +1,5 @@
 .main{
     width: 100%;
-    margin-top: -21px;
     .welcome{
         background: url('../img/pattern1.png') repeat;
         padding: 5% 0;
@@ -9,14 +8,164 @@
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 1rem;
             div:nth-of-type(1){
-                
+                text-align: center;
+                p{
+                    display: block;
+                    width: 80%;
+                    margin: 0 auto;
+                }
             }
             div:nth-of-type(2){
+                overflow: hidden;
+                border-radius: 10px;
+                width: 70%;
+                margin: 0 auto;
                 img{
-                    width: 70%;
+                    width: 100%;
                     display: block;
                     margin: 0 auto;
+                    transition: .5s all ease-in-out;
+                }
+                &:hover img{
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+    .discover{
+        background-image: url('../img/bg-intro-01.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        > div{
+            div{
+                padding: 8% 0;
+                text-align: center;
+            }
+        }
+    }
+    .triple-img{
+        margin-top: 5%;
+        margin-bottom: 5%;
+        > div{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            .triple-img-1, .triple-img-2, .triple-img-3{
+                div:nth-of-type(1){
                     border-radius: 10px;
+                    overflow: hidden;
+                    img{
+                        width: 100%;
+                        display: block;
+                        transition: .5s all ease-in-out;
+                    }
+                    &:hover img{
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+    }
+    .our-menu{
+        background: url('../img/pattern2.png') repeat;
+        padding: 5% 0 5% 0;
+        > div{
+            > div:nth-of-type(1){
+                text-align: center;
+            }
+            .menu{
+                display: grid;
+                gap: 2rem;
+                grid-template-areas: 
+                "lunch dinner drink"
+                "lunch dinner starters"
+                "happy happy dessert"
+                ;
+                .menu-list-1{
+                    grid-area: lunch;
+                }
+                .menu-list-2{
+                    grid-area: dinner;
+                }
+                .menu-list-3{
+                    grid-area: drink;
+                }
+                .menu-list-4{
+                    grid-area: starters;
+                }
+                .menu-list-5{
+                    grid-area: happy;
+                }
+                .menu-list-6{
+                    grid-area: dessert;
+                }
+                .menu-list-1, .menu-list-2{
+                    position: relative;
+                    > div:nth-of-type(1){
+                        border-radius: 10px;
+                        overflow: hidden;
+                        height: 500px;
+                        position: relative;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            display: block;
+                            object-fit: cover;
+                            transition: .5s all ease-in-out;
+                        }
+                    }
+                    > div:nth-of-type(2){
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+                    &:hover img{
+                        transform: scale(1.1);
+                    }
+                }
+                .menu-list-3, .menu-list-4, .menu-list-5, .menu-list-6{
+                    position: relative;
+                    > div:nth-of-type(1){
+                        border-radius: 10px;
+                        overflow: hidden;
+                        height: 232px;
+                        position: relative;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            display: block;
+                            object-fit: cover;
+                            transition: .5s all ease-in-out;
+                        }
+                    }
+                    > div:nth-of-type(2){
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+                    &:hover img{
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+    }
+    .event{
+        background: url('../img/bg-event-01.jpg') center/cover;
+        padding: 5% 0;
+        > div{
+            > div:nth-of-type(1){
+                text-align: center;
+            }
+            .event-box{
+                > div:nth-of-type(1){
+                    img{
+                        width: 100%;
+                    }
                 }
             }
         }

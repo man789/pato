@@ -2,9 +2,48 @@ body{
     font-family: 'Montserrat', sans-serif;
     // font-family: 'Poppins', sans-serif;
     // font-family: 'Courgette', cursive;
-    border-top: 5px solid #ec1d25;
 }
 .wrapper{
     max-width: 1200px;
     margin: 0 auto;
+}
+p{
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 1.7;
+    color: #666666;
+    margin: 0;
+}
+.title-h2{
+    font-family: 'Courgette', cursive;
+    font-size: 30px;
+    line-height: 1.2;
+    color: #d61c22;
+    font-weight: 300;
+}
+.title-h3{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 1.2;
+    color: #222222;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    margin: 1% 0 5% 0;
+}
+.title-h4{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    color: #333333;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin: 10% 0 5% 0;
+}
+.red-txt{
+    color: #ec1d25;
+}
+.white-txt{
+    color: white;
 }
