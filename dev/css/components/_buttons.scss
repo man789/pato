@@ -7,10 +7,14 @@
     margin: 5% 0 0 0;
     text-decoration: none;
     text-transform: uppercase;
+    transition: .3s all ease-in-out;
     &::after{
         content: '\f178';
         font-family: "FontAwesome";
         margin-left: 2%;
+    }
+    &:hover{
+        color: #ec1d25;
     }
 }
 .menu-btn{
