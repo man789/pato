@@ -18,13 +18,13 @@
       </div>
       <!-- Menu -->
       <div>
-        <a href="#">home</a>
+        <a href="index.html">home</a>
         <a href="#">menu</a>
         <a href="#">reservation</a>
         <a href="#">gallery</a>
         <a href="#">about</a>
         <a href="#">blog</a>
-        <a href="#">contact</a>
+        <a href="contact.html">contact</a>
       </div>
       <!-- socials -->
       <div>
@@ -215,10 +215,10 @@
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non repellat iusto ipsum, laudantium placeat blanditiis nostrum cum.
             </p>
             <div class="time-template">
-              <div><span class="time">20</span></div>
-              <div><span class="time">15</span></div>
-              <div><span class="time">30</span></div>
-              <div><span class="time">45</span></div>
+              <div><span class="time day"></span></div>
+              <div><span class="time hour"></span></div>
+              <div><span class="time minute"></span></div>
+              <div><span class="time second"></span></div>
               <div><span class="time-txt">days</span></div>
               <div><span class="time-txt">hours</span></div>
               <div><span class="time-txt">minute</span></div>
@@ -287,13 +287,13 @@
           </h3>
         </div>
         <div>
-          <img src="" alt="">
+          <!-- <img src="img/avatar-01.jpg" alt="Avatar review"> -->
         </div>
         <div>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint nobis iusto, consequuntur enim perspiciatis.
           </p>
-          <div class="stars"></div>
+          <div class="stars"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></div>
           <p>marie simons - new york</p>
         </div>
       </div>
@@ -309,8 +309,9 @@
             our video
           </h3>
         </div>
-        <!-- icone youtube -->
-        <div></div>
+        <div>
+          <span><i class="fa fa-play" aria-hidden="true"></i></span>
+        </div>
       </div>
     </section>
     <section class="blog">
@@ -326,10 +327,10 @@
         <div>
           <div class="blog-1">
             <div>
-              <img src="" alt="">
-            </div>
-            <div>
-              <p>21 Dec 2017</p>
+              <img src="img/blog-01.jpg" alt="blog image section 1">
+              <div>
+                <p>21 Dec 2017</p>
+              </div>
             </div>
             <div>
               <h4 class="title-h4">
@@ -343,10 +344,10 @@
           </div>
           <div class="blog-2">
             <div>
-              <img src="" alt="">
-            </div>
-            <div>
-              <p>15 Dec 2017</p>
+              <img src="img/blog-02.jpg" alt="blog image section 2">
+              <div>
+                <p>15 Dec 2017</p>
+              </div>
             </div>
             <div>
               <h4 class="title-h4">
@@ -360,10 +361,10 @@
           </div>
           <div class="blog-3">
             <div>
-              <img src="" alt="">
-            </div>
-            <div>
-              <p>12 Dec 2017</p>
+              <img src="img/blog-03.jpg" alt="blog image section 3">
+              <div>
+                <p>12 Dec 2017</p>
+              </div>
             </div>
             <div>
               <h4 class="title-h4">
@@ -382,12 +383,8 @@
       <!-- bg pattern -->
       <div class="wrapper">
         <div>
-          <h4 class="title-h4">
-            specials sign up
-          </h4>
-        </div>
-        <div>
           <form action="">
+            <label for="mail2">specials sign up</label>
             <input type="email" name="mail2" id="mail2" placeholder="Email Address">
           </form>
         </div>
@@ -403,55 +400,55 @@
       <div class="wrapper">
         <div>
           <h5 class="title-h5">contact us</h5>
-          <div><span><!-- icon --></span><span class="footer-txt">8th floor, 379 Hudson St, New York, NY 10018</span></div>
-          <div><span><!-- icon --></span><span class="footer-txt">(+1) 96 716 6879</span></div>
-          <div><span><!-- icon --></span><span class="footer-txt"><a href="mailto:contact@site.com">contact@site.com</a></span></div>
+          <div><span><i class="fa fa-map-marker" aria-hidden="true"></i></span><span class="footer-txt">8th floor, 379 Hudson St, New York, NY 10018</span></div>
+          <div><span><i class="fa fa-phone" aria-hidden="true"></i></span><span class="footer-txt">(+1) 96 716 6879</span></div>
+          <div><span><i class="fa fa-envelope-o" aria-hidden="true"></i></span><span class="footer-txt"><a href="mailto:contact@site.com" class="footer-txt">contact@site.com</a></span></div>
         </div>
         <div>
           <h5 class="title-h5">opening times</h5>
-          <p>09:30 AM – 11:00 PM</p>
-          <p>Every Day</p>
+          <p class="footer-txt">09:30 AM – 11:00 PM</p>
+          <p class="footer-txt">Every Day</p>
         </div>
         <div>
           <h5 class="title-h5">Latest twitter</h5>
           <div class="twitter-tag">
-            <div><span><!-- icon --></span><span>@colorlib</span></div>
+            <div><span><i class="fa fa-twitter" aria-hidden="true"></i></span><a href="">@colorlib</a></div>
             <div>
-              <p>
-                Activello is a good option. It has a slider built into that displays the featured image in the slider. <a href="#">buff.ly/2zaSfAQ</a>
+              <p class="footer-txt">
+                Activello is a good option. It has a slider built into that displays the featured image in the slider. <br><a href="#">buff.ly/2zaSfAQ</a>
               </p>
             </div>
             <div>
-              <span>21 Dec 2017</span>
+              <span class="f-date">21 Dec 2017</span>
             </div>
           </div>
           <div class="twitter-tag">
-            <div><span><!-- icon --></span><span>@colorlib</span></div>
+            <div><span><i class="fa fa-twitter" aria-hidden="true"></i></span><a href="">@colorlib</a></div>
             <div>
-              <p>
-                Activello is a good option. It has a slider built into that displays the featured image in the slider. <a href="#">buff.ly/2zaSfAQ</a>
+              <p class="footer-txt">
+                Activello is a good option. It has a slider built into that displays the featured image in the slider. <br><a href="#">buff.ly/2zaSfAQ</a>
               </p>
             </div>
             <div>
-              <span>21 Dec 2017</span>
+              <span class="f-date">21 Dec 2017</span>
             </div>
           </div>
         </div>
         <div>
           <h5 class="title-h5">gallery</h5>
-          <div>
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
+          <div class="img-gallery-footer">
+            <div><img src="img/photo-gallery-01.jpg" alt="Gallery"><div class="overlay"></div></div>
+            <div><img src="img/photo-gallery-02.jpg" alt="Gallery"><div class="overlay"></div></div>
+            <div><img src="img/photo-gallery-03.jpg" alt="Gallery"><div class="overlay"></div></div>
+            <div><img src="img/photo-gallery-04.jpg" alt="Gallery"><div class="overlay"></div></div>
+            <div><img src="img/photo-gallery-05.jpg" alt="Gallery"><div class="overlay"></div></div>
+            <div><img src="img/photo-gallery-06.jpg" alt="Gallery"><div class="overlay"></div></div>
+            <div><img src="img/photo-gallery-07.jpg" alt="Gallery"><div class="overlay"></div></div>
+            <div><img src="img/photo-gallery-08.jpg" alt="Gallery"><div class="overlay"></div></div>
+            <div><img src="img/photo-gallery-09.jpg" alt="Gallery"><div class="overlay"></div></div>
+            <div><img src="img/photo-gallery-10.jpg" alt="Gallery"><div class="overlay"></div></div>
+            <div><img src="img/photo-gallery-11.jpg" alt="Gallery"><div class="overlay"></div></div>
+            <div><img src="img/photo-gallery-12.jpg" alt="Gallery"><div class="overlay"></div></div>
           </div>
         </div>
       </div>
@@ -459,11 +456,11 @@
     <div class="footer-black">
       <div class="wrapper">
         <div class="footer-social">
-          <a href="#">trip</a>
-          <a href="#">twitter</a>
-          <a href="#">facebook</a>
+          <a href="#"><i class="fa fa-tripadvisor" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
         </div>
-        <small>Copyright © 2018 All rights reserved | This template is made with  by Colorlib</small>
+        <small class="footer-txt">Copyright © 2018 All rights reserved | This template is made with  by <a href="#">Colorlib</a></small>
       </div>
     </div>
   </footer>

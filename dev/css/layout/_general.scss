@@ -8,7 +8,7 @@ body{
     margin: 0 auto;
 }
 p{
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 1em;
     line-height: 1.7;
@@ -40,6 +40,31 @@ p{
     text-transform: uppercase;
     letter-spacing: 3px;
     margin: 10% 0 5% 0;
+}
+.title-h5{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.footer-txt{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    color: #999999;
+    line-height: 1.7;
+    text-decoration: none;
+}
+.f-date{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    color: #555555;
+    line-height: 1.7;
+    padding: 5% 0;
+    display: block;
 }
 .red-txt{
     color: #ec1d25;

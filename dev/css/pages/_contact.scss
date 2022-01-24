@@ -1,0 +1,99 @@
+.main-contact{
+    background: url('../img/pattern1.png') repeat;
+    .g-map{
+        padding: 5% 0;
+        iframe{
+            border: 5px solid white !important;
+            border-radius: 10px;
+        }
+    }
+    .contact{
+        .contact-form{
+            width: 70%;
+            margin: 0 auto;
+            form{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                > div:nth-of-type(1){
+                    width: calc(100% / 3);
+                    padding: 1% 1%;
+                }
+                > div:nth-of-type(2){
+                    width: calc(100% / 3);
+                    padding: 1% 1%;
+                }
+                > div:nth-of-type(3){
+                    width: calc(100% / 3);
+                    padding: 1% 1%;
+                }
+                > div:nth-of-type(4){
+                    width: 100%;
+                    padding: 1% 1%;
+                    label{
+                        width: 100%;
+                        display: block;
+                    }
+                    textarea{
+                        border: 1px solid lightgray;
+                        border-radius: 10px;
+                        padding: 10px 15px;
+                        width: 100%;
+                        margin: 2% 0 4% 0;
+                        resize: vertical;
+                    }
+                }
+                > div:nth-of-type(5){
+                    margin-bottom: 5%;
+                }
+                label{
+                    font-weight: 400;
+                    font-size: 15px;
+                    color: #555555;
+                }
+                input{
+                    border: 1px solid lightgray;
+                    border-radius: 10px;
+                    padding: 10px 15px;
+                    width: 100%;
+                    margin-top: 5%;
+                }
+            }
+        }
+    }
+    .contact-legal{
+        padding: 5% 0;
+        > div{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            .contact-legal-map, .contact-legal-call, .contact-legal-hours{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                div:nth-of-type(1){
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
+                    margin-bottom: 5%;
+                    i{
+                        width: 20%;
+                    }
+                    h4{
+                        width: 80%;
+                        margin: 0;
+                    }
+                }
+                div:nth-of-type(2){
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
+                    span{
+                        width: 20%;
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}

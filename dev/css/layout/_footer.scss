@@ -1,0 +1,103 @@
+.footer{
+    color: white;
+    .footer-grey{
+        background-color: #222222;
+        padding: 3% 0;
+        > div{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-areas: 
+            "f-contact f-twitter f-gallery"
+            "f-opening f-twitter f-gallery"
+            ;
+            gap: 2rem;
+            > div:nth-of-type(1){
+                grid-area: f-contact;
+                div{
+                    margin: 0 0 3% 0;
+                }
+            }
+            > div:nth-of-type(2){
+                grid-area: f-opening;
+            }
+            > div:nth-of-type(3){
+                grid-area: f-twitter;
+                a{
+                    color: #ec1d25;
+                    font-size: 0.9em;
+                    text-decoration: none;
+                }
+            }
+            > div:nth-of-type(4){
+                grid-area: f-gallery;
+                .img-gallery-footer{
+                    display: grid;
+                    grid-template-columns: repeat(4, minmax(100px, 1fr));
+                    gap: 1rem;
+                    position: relative;
+                    div{
+                        position: relative;
+                        width: 100%;
+                        height: 100%;
+                        img{
+                            width: 100%;
+                            display: block;
+                        }
+                        .overlay{
+                            position: absolute;
+                            top: 0;
+                            bottom: 0;
+                            left: 0;
+                            right: 0;
+                            height: 100%;
+                            width: 100%;
+                            opacity: 0;
+                            transition: .5s all ease-in-out;
+                            background-color: #d61c22;
+                            cursor: pointer;
+                        }
+                        &:hover .overlay{
+                            opacity: 0.6;
+                        }
+                    }
+                }
+            }
+        }
+        // FontAwesome Style Footer
+        i{
+            font-weight: 400;
+            font-size: 13px;
+            color: #999999;
+            line-height: 1.7;
+            margin-right: 15px;
+        }
+    }
+    .footer-black{
+        background-color: #000000;
+        padding: 2% 0;
+        > div{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            .footer-social{
+                a{
+                    color: white;
+                    margin-right: 3%;
+                    transition: .3s all ease-in-out;
+                    &:hover{
+                        color: #d61c22;
+                    }
+                }
+            }
+            small{
+                a{
+                    text-decoration: none;
+                    color: #666666;
+                    transition: .3s all ease-in-out;
+                    &:hover{
+                        color: #d61c22;
+                    }
+                }
+            }
+        }
+    }
+}
