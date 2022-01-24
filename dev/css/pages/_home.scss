@@ -3,10 +3,16 @@
     .welcome{
         background: url('../img/pattern1.png') repeat;
         padding: 5% 0;
+        @media screen and (max-width: 768px) {
+            padding: 10% 0;
+        }
         > div{
             display: grid;
             grid-template-columns: repeat(2, minmax(300px, 1fr));
             gap: 1rem;
+            @media screen and (max-width: 768px) {
+                grid-template-columns: 1fr;
+            }
             div:nth-of-type(1){
                 text-align: center;
                 p{
@@ -42,16 +48,26 @@
             div{
                 padding: 8% 0;
                 text-align: center;
+                @media screen and (max-width: 768px) {
+                    padding: 10% 0;
+                }
             }
         }
     }
     .triple-img{
         margin-top: 5%;
         margin-bottom: 5%;
+        @media screen and (max-width: 768px) {
+            margin-top: 10%;
+            margin-bottom: 10%;
+        }
         > div{
             display: grid;
             grid-template-columns: repeat(3, minmax(200px, 1fr));
             gap: 2rem;
+            @media screen and (max-width: 768px) {
+                grid-template-columns: 1fr;
+            }
             .triple-img-1, .triple-img-2, .triple-img-3{
                 div:nth-of-type(1){
                     border-radius: 10px;
@@ -71,6 +87,9 @@
     .our-menu{
         background: url('../img/pattern2.png') repeat;
         padding: 5% 0 5% 0;
+        @media screen and (max-width: 768px) {
+            padding: 10% 0;
+        }
         > div{
             > div:nth-of-type(1){
                 text-align: center;
@@ -83,6 +102,15 @@
                 "lunch dinner starters"
                 "happy happy dessert"
                 ;
+                @media screen and (max-width: 768px) {
+                    grid-template-areas: 
+                    "lunch dinner"
+                    "happy happy"
+                    "drink drink"
+                    "starters starters"
+                    "dessert dessert"
+                    ;
+                }
                 .menu-list-1{
                     grid-area: lunch;
                 }
@@ -151,33 +179,66 @@
                         transform: scale(1.1);
                     }
                 }
+                @media screen and (max-width: 768px) {
+                    .menu-list-3, .menu-list-4, .menu-list-6{
+                        > div:nth-of-type(1){
+                            height: 500px;
+                        }
+                    }
+                }
             }
         }
     }
     .event{
         background: url('../img/bg-event-01.jpg') center/cover;
         padding: 5% 0;
+        @media screen and (max-width: 768px) {
+            padding: 10% 0;
+        }
         > div{
+            @media screen and (max-width: 768px) {
+                padding: 0 10%;
+            }
             > div:nth-of-type(1){
                 text-align: center;
             }
             .events-box{
                 display: grid;
                 grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                @media screen and (max-width: 768px) {
+                    grid-template-columns: 1fr;
+                }
                 > div:nth-of-type(1){
                     display: flex;
+                    @media screen and (max-width: 768px) {
+                        flex-direction: column;    
+                    }
                     .red-bar{
                         color: white;
                         border-radius: 10px 0 0 10px;
                         background-color: rgba(214, 28, 34, .5);
                         position: relative;
                         width: 10%;
+                        @media screen and (max-width: 768px) {
+                            width: 100%;
+                            border-radius: 10px 10px 0 0;
+                        }
                         span{
                             position: absolute;
                             top: 50%;
                             left: 50%;
                             transform: translate(-50%, -50%) rotateZ(90deg);
                             white-space:nowrap;
+                            @media screen and (max-width: 768px) {
+                                position: relative;
+                                transform: none;
+                                white-space: normal;
+                                top: 0;
+                                left: 0;
+                                padding: 2% 0;
+                                display: block;
+                                text-align: center;
+                            }
                         }
                     }
                     > div:nth-of-type(2){
@@ -192,6 +253,9 @@
                     border-radius: 0 10px 10px 0;
                     text-align: center;
                     padding: 0 5%;
+                    @media screen and (max-width: 768px) {
+                        border-radius: 0 0 10px 10px;    
+                    }
                     .time-template{
                         display: grid;
                         grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -220,18 +284,35 @@
             "title img"
             "form img"
             ;
+            @media screen and (max-width: 768px) {
+                grid-template-columns: 1fr;
+                grid-template-areas: 
+                "title"
+                "form"
+                "img"
+                ;
+            }
             > div:nth-of-type(1){
                 text-align: center;
                 grid-area: title;
                 padding-right: 15%;
+                @media screen and (max-width: 768px) {
+                    padding: 0;
+                }
             }
             // Form Style
             > div:nth-of-type(2){
                 grid-area: form;
                 padding-right: 15%;
+                @media screen and (max-width: 768px) {
+                    padding: 0;
+                }
                 form{
                     display: grid;
                     grid-template-columns: repeat(2, minmax(100px, 1fr));
+                    @media screen and (max-width: 768px) {
+                        grid-template-columns: 1fr;
+                    }
                     div{
                         width: 100%;
                         display: flex;
@@ -251,6 +332,9 @@
                     }
                     div:last-of-type{
                         display: block;
+                        @media screen and (max-width: 768px) {
+                            text-align: center;
+                        }
                     }
                 }
             }
@@ -258,6 +342,10 @@
                 grid-area: img;
                 border-radius: 10px;
                 overflow: hidden;
+                @media screen and (max-width: 768px) {
+                    width: 50%;
+                    margin: 50px auto 50px auto;
+                }
                 img{
                     width: 100%;
                     height: 100%;
@@ -330,6 +418,9 @@
     }
     .blog{
         padding: 5% 0 5% 0;
+        @media screen and (max-width: 768px) {
+            padding: 10% 0;
+        }
         > div{
             > div:nth-of-type(1){
                 text-align: center;
@@ -339,6 +430,9 @@
                 grid-template-columns: repeat(3, minmax(200px, 1fr));
                 gap: 2rem;
                 position: relative;
+                @media screen and (max-width: 768px) {
+                    grid-template-columns: 1fr;
+                }
                 .blog-1, .blog-2 , .blog-3{
                     div:nth-of-type(1){
                         border-radius: 10px;
@@ -374,32 +468,53 @@
     .sign-up{
         background: url('../img/pattern1.png') repeat;
         padding: 5% 0 5% 0;
+        @media screen and (max-width: 768px) {
+            padding: 15% 0;
+        }
         > div{
             display: flex;
             align-items: center;
+            @media screen and (max-width: 768px) {
+                flex-direction: column;
+            }
             > div:nth-of-type(1){
                 width: 60%;
                 form{
                     display: flex;
                     justify-content: flex-end;
                     align-items: center;
+                    @media screen and (max-width: 768px) {
+                        flex-direction: column;
+                    }
                     label{
                         font-weight: 600;
                         font-size: 1.3em;
                         color: #555555;
                         text-transform: uppercase;
                         margin-right: 5%;
+                        @media screen and (max-width: 768px) {
+                            margin-right: 0;
+                        }
                     }
                     input{
                         border: 1px solid lightgray;
                         border-radius: 10px;
                         padding: 10px 15px;
                         margin-right: 5%;
+                        @media screen and (max-width: 768px) {
+                            margin-right: 0;
+                            margin-top: 5%;
+                        }
                     }
                 }
             }
             > div:nth-of-type(2){
                 width: 40%;
+                @media screen and (max-width: 768px) {
+                    width: 100%;
+                    text-align: center;
+                    margin: 5% 0;
+                }
             }
         }
     }

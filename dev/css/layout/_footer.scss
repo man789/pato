@@ -3,6 +3,9 @@
     .footer-grey{
         background-color: #222222;
         padding: 3% 0;
+        @media screen and (max-width: 768px) {
+            padding: 6% 0;
+        }
         > div{
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -11,6 +14,15 @@
             "f-opening f-twitter f-gallery"
             ;
             gap: 2rem;
+            @media screen and (max-width: 768px) {
+                grid-template-areas: 
+                "f-contact f-twitter"
+                "f-opening f-twitter"
+                "f-gallery ."
+                ;
+                grid-template-columns: repeat(2, 50%);
+                gap: 0;
+            }
             > div:nth-of-type(1){
                 grid-area: f-contact;
                 div{
@@ -35,6 +47,9 @@
                     grid-template-columns: repeat(4, minmax(100px, 1fr));
                     gap: 1rem;
                     position: relative;
+                    @media screen and (max-width: 768px) {
+                        grid-template-columns: repeat(4, 1fr);
+                    }
                     div{
                         position: relative;
                         width: 100%;
@@ -78,11 +93,17 @@
         > div{
             display: grid;
             grid-template-columns: repeat(2, 1fr);
+            @media screen and (max-width: 768px) {
+                grid-template-columns: 25% 75%;
+            }
             .footer-social{
                 a{
                     color: white;
                     margin-right: 3%;
                     transition: .3s all ease-in-out;
+                    @media screen and (max-width: 768px) {
+                        margin-right: 6%;
+                    }
                     &:hover{
                         color: #d61c22;
                     }

@@ -6,6 +6,9 @@ body{
 .wrapper{
     max-width: 1200px;
     margin: 0 auto;
+    @media screen and (max-width: 768px) {
+        padding: 0 2%;
+    }
 }
 p{
     font-family: 'Montserrat', sans-serif;
@@ -40,6 +43,9 @@ p{
     text-transform: uppercase;
     letter-spacing: 3px;
     margin: 10% 0 5% 0;
+    @media screen and (max-width: 768px) {
+        margin: 5% 0 5% 0;
+    }
 }
 .title-h5{
     font-family: 'Poppins', sans-serif;
