@@ -17,18 +17,19 @@ function functionStick(){
 
 // Burger Menu
 let myBurger = document.querySelector(".burger-menu");
-let navLink = document.querySelector(".bg-nav");
+let navLink = document.querySelector(".nav-right");
+let navbg = document.querySelector(".bg-js");
 let link = document.querySelectorAll(".main-nav__link");
 let cross = document.querySelector('.cross');
 
-// navLink.addEventListener("click", hasClick);
 myBurger.addEventListener("click", hasClick);
 cross.addEventListener("click", hasClick);
+navbg.addEventListener("click", hasClick);
 for(i=0; i<link.length; i++){
     link[i].addEventListener("click", hasClick)
 }
 
 function hasClick(){
-    // myBurger.classList.toggle("active");
     navLink.classList.toggle("active");
+    navbg.classList.toggle("active");
 }
