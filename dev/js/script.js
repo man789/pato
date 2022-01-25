@@ -1,14 +1,3 @@
-let date_index = new Date();
-let day = document.querySelector('.day');
-let hour = document.querySelector('.hour');
-let minute = document.querySelector('.minute');
-let second = document.querySelector('.second');
-
-day.innerHTML = date_index.getUTCDate();
-hour.innerHTML = date_index.getHours();
-minute.innerHTML = date_index.getMinutes();
-second.innerHTML = date_index.getSeconds();
-
 // When the user scrolls the page, execute myFunction
 window.onscroll = function(){
     functionStick();
@@ -25,19 +14,21 @@ function functionStick(){
         myNav.classList.remove("sticky");
     }
 }
+
 // Burger Menu
 let myBurger = document.querySelector(".burger-menu");
-let navLink = document.querySelector(".nav-link");
+let navLink = document.querySelector(".bg-nav");
 let link = document.querySelectorAll(".main-nav__link");
 let cross = document.querySelector('.cross');
 
-cross.addEventListener("click", hasClick);
-
+// navLink.addEventListener("click", hasClick);
 myBurger.addEventListener("click", hasClick);
+cross.addEventListener("click", hasClick);
 for(i=0; i<link.length; i++){
     link[i].addEventListener("click", hasClick)
 }
+
 function hasClick(){
-    myBurger.classList.toggle("active");
+    // myBurger.classList.toggle("active");
     navLink.classList.toggle("active");
 }

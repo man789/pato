@@ -69,3 +69,22 @@
         }
     }
 }
+.header-blog{
+    height: 60vh;
+    background: url('../img/bg-title-page-03.jpg') center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    div{
+        span{
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            font-size: 50px;
+            line-height: 1.2;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 6px;
+            word-spacing: 6px;
+        }
+    }
+}

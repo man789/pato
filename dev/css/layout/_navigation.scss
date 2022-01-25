@@ -7,6 +7,10 @@
     padding-top: 2%;
     border-top: 5px solid #ec1d25;
     transition: .3s all ease-in-out;
+    @media screen and (max-width:768px){
+        position: relative;
+        margin-bottom: -100px;
+    }
     > div{
         display: flex;
         > div:nth-of-type(1){
@@ -14,6 +18,9 @@
             a{
                 img{
                     width: 80%;
+                    @media screen and (max-width:768px){
+                        width: 100%;
+                    }
                 }
             }
         }
@@ -24,41 +31,7 @@
             align-items: center;
             // Menu Display on Queries
             @media screen and (max-width:768px){
-                position: fixed;
-                width: 50%;
-                height: 100%;
-                top:0;
-                right:-100vh;
-                background: rgba(255, 255, 255, .9);
-                flex-direction:column;
-                justify-content:flex-start;
-                align-items:center;
-                transition:.3s all ease-in-out;
-                padding: 10% 0 0 0;
-                .cross{
-                    width: 30px;
-                    height: 30px;
-                    position: absolute;
-                    top: 10px;
-                    right: 10px;
-                    z-index: 15;
-                    span:nth-of-type(1), span:nth-of-type(2){
-                        display: block;
-                        width: 30px;
-                        height: 1px;
-                        border-radius:1px;
-                        background:#000000;
-                        margin:2px 0;
-                        transition:.3s all cubic-bezier(0.68, -0.55, 0.265, 1.55);
-                        position: absolute;
-                        top: 50%;
-                        left: 50%;
-                        transform: translate(-50%, -50%) rotate(45deg);
-                    }
-                    span:nth-of-type(2){
-                        transform: translate(-50%, -50%) rotate(-45deg);
-                    }
-                }
+                display: none;
             }
             a{
                 text-decoration: none;
@@ -134,7 +107,4 @@
             }
         }
     }
-}
-.active{
-    right: 0 !important;
 }
