@@ -22,6 +22,17 @@
             "b4 aside"
             "b5 aside"
             ;
+            @media screen and (max-width: 768px) {
+                grid-template-columns: 1fr;
+                grid-template-areas: 
+                "b1"
+                "b2"
+                "b3"
+                "b4"
+                "b5"
+                "aside"
+                ;
+            }
             .b-1{
                 grid-area: b1;
             }
